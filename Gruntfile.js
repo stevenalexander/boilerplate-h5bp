@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         files: [{
             expand: true,
             cwd: '<%= vendor %>/h5bp/',
-            src: ['**/*', '!**/index.html', '!**/docs'],
+            src: ['**/*', '!**/docs'],
             dest: '<%= site.dest %>/'
           }
         ]
@@ -104,7 +104,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-prettify');
-  grunt.loadNpmTasks('grunt-verb');
 
   // Default tasks to be run.
   grunt.registerTask('default', [
